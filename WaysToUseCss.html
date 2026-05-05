@@ -14,13 +14,35 @@
             color:aqua;
         }
 
+        h1:nth-of-type(2){
+            position: relative;
+        }
+
+        button{
+            position: absolute;
+            top: 50%;
+            right: 40%;
+            font-size: 2rem;
+            border-radius: 5px;
+            background-color: lightcoral
+        }
+
     </style>
 </head>
 <body>
     <h1>Ways to use css</h1>
     <!--Inline css-->
-    <h1 style="height:500px;width:100%;background-color: antiquewhite;">Dhoni</h1>
+
+    <h1 style="height:500px;width:100%;background-color: antiquewhite;">Dhoni
+        <button id="btn">google.com</button>
+    </h1>
     <h2>Raina is the player</h2>
     <h3>Jadeja is allrounder</h3>
+    <script>
+        let button = document.getElementById("btn");
+        button.onclick = ()=>{
+            window.location.href = "https://www.google.com";
+        }
+    </script>
 </body>
 </html>
